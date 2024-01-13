@@ -8,9 +8,9 @@ local function createGui(parent)
 	local Frame2 = Instance.new("Frame",ScreenGui1)
 	Frame2["AnchorPoint"] = Vector2.new(0.5, 0.5)
 	Frame2["Name"] = "Main"
-	Frame2["Position"] = UDim2.new(0.499823779, 0, 0.498919755, 0)
+	Frame2["Position"] = UDim2.new(0.526269495, 0, 0.489660501, 0)
 	Frame2["BorderColor3"] = Color3.new(0.639216, 0.14902, 0.921569)
-	Frame2["Size"] = UDim2.new(0, 1417, 0, 809)
+	Frame2["Size"] = UDim2.new(0, 512, 0, 224)
 	Frame2["BorderSizePixel"] = 2
 	Frame2["BackgroundColor3"] = Color3.new(0.113725, 0.113725, 0.113725)
 	----Frame2----
@@ -24,74 +24,56 @@ local function createGui(parent)
 	TextLabel4["BorderColor3"] = Color3.new(0.113725, 0.113725, 0.113725)
 	TextLabel4["Text"] = "key on tg"
 	TextLabel4["Font"] = Enum.Font.Unknown
-	TextLabel4["Position"] = UDim2.new(-1.83702497e-07, 0, 0.138986036, 0)
+	TextLabel4["Position"] = UDim2.new(0.112449169, 0, -0.00111988618, 0)
 	TextLabel4["TextSize"] = 14
-	TextLabel4["Size"] = UDim2.new(0, 1312, 0, 108)
+	TextLabel4["Size"] = UDim2.new(0, 417, 0, 108)
 	TextLabel4["TextScaled"] = true
 	TextLabel4["BackgroundColor3"] = Color3.new(0.113725, 0.113725, 0.113725)
 	----TextLabel4----
-	--TextButton5--
-	local TextButton5 = Instance.new("TextButton",Frame2)
-	TextButton5["TextWrapped"] = true
-	TextButton5["TextColor3"] = Color3.new(1, 1, 1)
-	TextButton5["BorderColor3"] = Color3.new(0.639216, 0.14902, 0.921569)
-	TextButton5["Text"] = "X"
-	TextButton5["TextSize"] = 80
-	TextButton5["Font"] = Enum.Font.Unknown
-	TextButton5["Name"] = "Close"
-	TextButton5["Position"] = UDim2.new(0.901754916, 0, 0.0164306778, 0)
-	TextButton5["Size"] = UDim2.new(0, 52, 0, 51)
-	TextButton5["ZIndex"] = 5
-	TextButton5["BorderSizePixel"] = 2
-	TextButton5["BackgroundColor3"] = Color3.new(0.113725, 0.113725, 0.113725)
-	----TextButton5----
+	--TextBox5--
+	local TextBox5 = Instance.new("TextBox",Frame2)
+	TextBox5["TextWrapped"] = true
+	TextBox5["TextColor3"] = Color3.new(1, 1, 1)
+	TextBox5["BorderColor3"] = Color3.new(0.639216, 0.14902, 0.921569)
+	TextBox5["Text"] = ""
+	TextBox5["CursorPosition"] = -1
+	TextBox5["Size"] = UDim2.new(0, 412, 0, 33)
+	TextBox5["PlaceholderColor3"] = Color3.new(1, 1, 1)
+	TextBox5["Font"] = Enum.Font.SourceSansBold
+	TextBox5["TextSize"] = 14
+	TextBox5["Position"] = UDim2.new(0.0926760435, 0, 0.481022984, 0)
+	TextBox5["TextScaled"] = true
+	TextBox5["PlaceholderText"] = "PUT KEY HERE"
+	TextBox5["BorderSizePixel"] = 2
+	TextBox5["BackgroundColor3"] = Color3.new(0.168627, 0.168627, 0.168627)
+	----TextBox5----
 	--UICorner6--
-	local UICorner6 = Instance.new("UICorner",TextButton5)
+	local UICorner6 = Instance.new("UICorner",TextBox5)
 	----UICorner6----
-	--TextBox7--
-	local TextBox7 = Instance.new("TextBox",Frame2)
-	TextBox7["TextWrapped"] = true
-	TextBox7["TextColor3"] = Color3.new(1, 1, 1)
-	TextBox7["BorderColor3"] = Color3.new(0.639216, 0.14902, 0.921569)
-	TextBox7["Text"] = ""
-	TextBox7["CursorPosition"] = -1
-	TextBox7["Size"] = UDim2.new(0, 1338, 0, 40)
-	TextBox7["PlaceholderColor3"] = Color3.new(1, 1, 1)
-	TextBox7["Font"] = Enum.Font.SourceSansBold
-	TextBox7["TextSize"] = 14
-	TextBox7["Position"] = UDim2.new(-0.00812116638, 0, 0.583374381, 0)
-	TextBox7["TextScaled"] = true
-	TextBox7["PlaceholderText"] = "PUT KEY HERE"
-	TextBox7["BorderSizePixel"] = 2
-	TextBox7["BackgroundColor3"] = Color3.new(0.168627, 0.168627, 0.168627)
-	----TextBox7----
+	--TextButton7--
+	local TextButton7 = Instance.new("TextButton",Frame2)
+	TextButton7["RichText"] = true
+	TextButton7["TextColor3"] = Color3.new(1, 1, 1)
+	TextButton7["BorderColor3"] = Color3.new(0.639216, 0.14902, 0.921569)
+	TextButton7["Text"] = "Submit"
+	TextButton7["TextWrapped"] = true
+	TextButton7["TextSize"] = 26
+	TextButton7["Font"] = Enum.Font.Unknown
+	TextButton7["Name"] = "Submit"
+	TextButton7["Position"] = UDim2.new(0.0815386772, 0, 0.733551025, 0)
+	TextButton7["TextScaled"] = true
+	TextButton7["Size"] = UDim2.new(0, 417, 0, 53)
+	TextButton7["BorderSizePixel"] = 2
+	TextButton7["BackgroundColor3"] = Color3.new(0.168627, 0.168627, 0.168627)
+	----TextButton7----
 	--UICorner8--
-	local UICorner8 = Instance.new("UICorner",TextBox7)
+	local UICorner8 = Instance.new("UICorner",TextButton7)
 	----UICorner8----
-	--TextButton9--
-	local TextButton9 = Instance.new("TextButton",Frame2)
-	TextButton9["RichText"] = true
-	TextButton9["TextColor3"] = Color3.new(1, 1, 1)
-	TextButton9["BorderColor3"] = Color3.new(0.639216, 0.14902, 0.921569)
-	TextButton9["Text"] = "Submit"
-	TextButton9["TextWrapped"] = true
-	TextButton9["TextSize"] = 26
-	TextButton9["Font"] = Enum.Font.Unknown
-	TextButton9["Name"] = "Submit"
-	TextButton9["Position"] = UDim2.new(0.0683436245, 0, 0.76173687, 0)
-	TextButton9["TextScaled"] = true
-	TextButton9["Size"] = UDim2.new(0, 1159, 0, 92)
-	TextButton9["BorderSizePixel"] = 2
-	TextButton9["BackgroundColor3"] = Color3.new(0.168627, 0.168627, 0.168627)
-	----TextButton9----
-	--UICorner10--
-	local UICorner10 = Instance.new("UICorner",TextButton9)
-	----UICorner10----
-	--Script11--
-	local Script11 = Instance.new("Script",TextButton9)
-	----Script11----
-	spawn(function() --Source for Script11
-		local script = Script11
+	--Script9--
+	local Script9 = Instance.new("Script",TextButton7)
+	----Script9----
+	spawn(function() --Source for Script9
+		local script = Script9
 		local button = script.Parent
 		local textbox = script.Parent.Parent.TextBox
 		local frame = script.Parent.Parent
